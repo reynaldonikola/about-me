@@ -1,47 +1,160 @@
+<!--
+Name: Reynaldo Moros Ramos
+Course: CS 2550 Web Programming
+Project 1: About-Me Web Page
+Disclaimer: This code is my own work. I wrote every line of code from scratch (except the required course disclaimer).
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Reynaldo Moros | Portfolio</title>
+  <title>About Reynaldo Moros Ramos</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Reynaldo Moros</h1>
-    <p>Computer Science Student</p>
-  </header>
+  <h1>Reynaldo Moros Ramos</h1>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a Computer Science student with an interest in web development,
-      programming, and technology. I enjoy learning new tools and building
-      projects that improve my skills.
-    </p>
-  </section>
+  <img src="reynaldo.jpg" alt="Photo of Reynaldo Moros Ramos" class="profile-photo">
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML & CSS</li>
-      <li>Python</li>
-      <li>C++</li>
-      <li>Problem Solving</li>
-    </ul>
-  </section>
+  <h2>Personal Info:</h2>
+  <ul>
+    <li><b>Major:</b> Computer Science</li>
+    <li><b>High School:</b> ____________________ (Year: ________)</li>
+    <li><b>Current year at UVU:</b> ____________________</li>
+    <li><b>Favorite ice cream:</b> ____________________</li>
+  </ul>
 
-  <section>
-    <h2>Projects</h2>
-    <p>
-      This portfolio website is my first project hosted using GitHub Pages.
-      More projects will be added soon.
-    </p>
-  </section>
+  <h2>My five favorite books</h2>
+  <ol>
+    <li><i>The Lord of the Rings</i>, <a href="https://www.tolkiensociety.org/author/j-r-r-tolkien/" target="_blank">J. R. R. Tolkien</a></li>
+    <li><i>Harry Potter</i>, <a href="https://www.jkrowling.com/" target="_blank">J. K. Rowling</a></li>
+    <li><i>Chronicles of Narnia</i>, <a href="https://www.cslewis.com/" target="_blank">C. S. Lewis</a></li>
+    <li><i>The Old Man and the Sea</i>, <a href="https://www.hemingwayhome.com/" target="_blank">Ernest Hemingway</a></li>
+    <li><i>One Hundred Years of Solitude</i>, <a href="https://gabrielgarciamarquez.com/" target="_blank">Gabriel García Márquez</a></li>
+  </ol>
 
-  <footer>
-    <p>© 2026 Reynaldo Moros</p>
-  </footer>
+  <h2>Riding Forward</h2>
+  <p>
+    I wrote this short poem thinking about balancing school, work, and family while still making progress every day.
+  </p>
+  <div class="poem">
+    Quiet roads at dawn<br>
+    New code, new dreams, steady hands<br>
+    I keep moving on<br>
+  </div>
+
+  <h2>My personal interests</h2>
+  <p>
+    I’m interested in computer science because I enjoy solving problems and building things that work in the real world.
+    I like learning how software is designed and how different parts connect together.
+    Each new project helps me improve my skills and confidence.
+  </p>
+
+  <p>
+    I also enjoy motorcycles and spending time outdoors.
+    Riding helps me clear my mind and stay focused.
+    I like exploring new places and learning to be more disciplined and responsible.
+  </p>
+
+  <p>
+    Another big interest in my life is family.
+    I like creating a stable routine and working toward better opportunities.
+    I’m motivated by goals like finishing my degree and building a strong future.
+  </p>
+
+  <h2>Class schedule</h2>
+
+  <table border="1" cellspacing="3" cellpadding="3" class="schedule">
+    <tr>
+      <th></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+
+    <!-- 8:00 -->
+    <tr>
+      <th>8:00</th>
+      <td rowspan="2" class="class cs">CS 2550<br>Web Programming</td>
+      <td rowspan="2" class="class math">Math Study</td>
+      <td rowspan="2" class="class cs">CS 2550<br>Web Programming</td>
+      <td rowspan="2" class="class math">Math Study</td>
+      <td rowspan="2" class="class cs">CS 2550<br>Web Programming</td>
+    </tr>
+    <tr>
+      <th>8:30</th>
+    </tr>
+
+    <!-- 9:00 -->
+    <tr>
+      <th>9:00</th>
+      <td rowspan="2" class="class eng">ENGL 2010<br>Writing</td>
+      <td rowspan="2" class="class gym">Workout</td>
+      <td rowspan="2" class="class eng">ENGL 2010<br>Writing</td>
+      <td rowspan="2" class="class gym">Workout</td>
+      <td rowspan="2" class="class eng">ENGL 2010<br>Writing</td>
+    </tr>
+    <tr>
+      <th>9:30</th>
+    </tr>
+
+    <!-- 10:00 -->
+    <tr>
+      <th>10:00</th>
+      <td rowspan="2" class="class bio">BIO 1010<br>Study</td>
+      <td rowspan="2" class="class commute">Commute</td>
+      <td rowspan="2" class="class bio">BIO 1010<br>Study</td>
+      <td rowspan="2" class="class commute">Commute</td>
+      <td rowspan="2" class="class bio">BIO 1010<br>Study</td>
+    </tr>
+    <tr>
+      <th>10:30</th>
+    </tr>
+
+    <!-- 11:00 -->
+    <tr>
+      <th>11:00</th>
+      <td rowspan="2" class="class work">Work / Job</td>
+      <td rowspan="2" class="class cs2">Programming Practice</td>
+      <td rowspan="2" class="class work">Work / Job</td>
+      <td rowspan="2" class="class cs2">Programming Practice</td>
+      <td rowspan="2" class="class work">Work / Job</td>
+    </tr>
+    <tr>
+      <th>11:30</th>
+    </tr>
+
+    <!-- 12:00 -->
+    <tr>
+      <th>12:00</th>
+      <td rowspan="2" class="class lunch">Lunch</td>
+      <td rowspan="2" class="class lunch">Lunch</td>
+      <td rowspan="2" class="class lunch">Lunch</td>
+      <td rowspan="2" class="class lunch">Lunch</td>
+      <td rowspan="2" class="class lunch">Lunch</td>
+    </tr>
+    <tr>
+      <th>12:30</th>
+    </tr>
+
+    <!-- 1:00 -->
+    <tr>
+      <th>1:00</th>
+      <td rowspan="2" class="class family">Family / Baby Time</td>
+      <td rowspan="2" class="class study">Homework</td>
+      <td rowspan="2" class="class family">Family / Baby Time</td>
+      <td rowspan="2" class="class study">Homework</td>
+      <td rowspan="2" class="class family">Family / Baby Time</td>
+    </tr>
+    <tr>
+      <th>1:30</th>
+    </tr>
+
+  </table>
 
 </body>
 </html>
