@@ -1,37 +1,71 @@
+/* Repeating background image (EXTRA) */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-header {
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-section {
-  background-color: white;
+  font-family: Arial, Helvetica, sans-serif; /* EXTRA: change font */
+  background-image: url("pattern.png");
+  background-repeat: repeat;
+  background-color: #f4f4f4; /* fallback if image not found */
+  color: #111;
   margin: 20px;
-  padding: 20px;
-  border-radius: 6px;
 }
 
-h1, h2 {
+/* Make photo right-aligned and let text wrap (EXTRA) */
+.profile-photo {
+  float: right;
+  width: 300px;
+  max-width: 500px;
+  height: auto;
+  margin: 0 0 15px 15px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+/* Links underline only on hover (EXTRA) */
+a {
+  text-decoration: none;
+  color: #0645ad;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
   margin-top: 0;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+/* Center poem (EXTRA) */
+.poem {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-style: italic;
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #222;
-  color: white;
+/* Schedule table rules */
+.schedule {
+  width: 100%;
+  table-layout: fixed; /* EXTRA: equal column widths */
+  border-collapse: separate;
 }
+
+/* EXTRA: text alignment top/left for schedule */
+.schedule th,
+.schedule td {
+  vertical-align: top;
+  text-align: left;
+  padding: 3px;
+  font-size: 14px;
+}
+
+/* Color coding (EXTRA) */
+.class { font-weight: bold; }
+
+.cs { background-color: #cfe8ff; }       /* light blue */
+.cs2 { background-color: #bfe3ff; }      /* light blue 2 */
+.eng { background-color: #fff3b0; }      /* light yellow */
+.math { background-color: #ffd2d2; }     /* light red/pink */
+.bio { background-color: #c8f7c5; }      /* light green */
+.work { background-color: #e0d4ff; }     /* light purple */
+.gym { background-color: #d6f5ff; }      /* light cyan */
+.commute { background-color: #eaeaea; }  /* light gray */
+.lunch { background-color: #ffe0b2; }    /* light orange */
+.family { background-color: #ffd9f0; }   /* light pink */
+.study { background-color: #d8ffd8; }    /* light mint */
