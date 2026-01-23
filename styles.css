@@ -1,71 +1,68 @@
-/* Repeating background image (EXTRA) */
-body {
-  font-family: Arial, Helvetica, sans-serif; /* EXTRA: change font */
-  background-image: url("pattern.png");
+/* Project 1 - About Me Web Page (UVU) */
+
+/* EXTRA ITEM (2pts): change font */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 24px;
+
+  /* EXTRA ITEM (2pts): repeating background image */
+  background-image: url("bg.png");
   background-repeat: repeat;
-  background-color: #f4f4f4; /* fallback if image not found */
-  color: #111;
-  margin: 20px;
+  background-color: #f7f7f7;
 }
 
-/* Make photo right-aligned and let text wrap (EXTRA) */
-.profile-photo {
+h1, h2 { margin-top: 18px; }
+
+.profile-photo{
+  /* EXTRA ITEM (2pts): photo right aligned + text flows around it */
   float: right;
-  width: 300px;
   max-width: 500px;
+  max-height: 500px;
   height: auto;
-  margin: 0 0 15px 15px;
-  border: 2px solid #333;
-  border-radius: 8px;
+  width: 300px;
+  margin: 0 0 12px 16px;
+  border-radius: 10px;
 }
 
-/* Links underline only on hover (EXTRA) */
-a {
-  text-decoration: none;
-  color: #0645ad;
-}
-a:hover {
-  text-decoration: underline;
-}
+/* EXTRA ITEM (2pts): underline only on hover */
+a{ text-decoration: none; }
+a:hover{ text-decoration: underline; }
 
-h1 {
-  margin-top: 0;
-}
-
-/* Center poem (EXTRA) */
-.poem {
+/* EXTRA ITEM (2pts): indent/center poem */
+.poem{
   text-align: center;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 18px 0;
   font-style: italic;
 }
 
-/* Schedule table rules */
-.schedule {
+/* Schedule table requirements + extra items */
+table.schedule{
+  table-layout: fixed;  /* EXTRA ITEM (2pts): equal column widths */
   width: 100%;
-  table-layout: fixed; /* EXTRA: equal column widths */
-  border-collapse: separate;
 }
 
-/* EXTRA: text alignment top/left for schedule */
-.schedule th,
-.schedule td {
-  vertical-align: top;
+table.schedule th,
+table.schedule td{
+  vertical-align: top; /* EXTRA ITEM (2pts): top/left alignment */
   text-align: left;
-  padding: 3px;
-  font-size: 14px;
 }
 
-/* Color coding (EXTRA) */
-.class { font-weight: bold; }
+/* Make the time column narrower */
+table.schedule th:first-child,
+table.schedule td:first-child{
+  width: 90px;
+  font-weight: bold;
+}
 
-.cs { background-color: #cfe8ff; }       /* light blue */
-.cs2 { background-color: #bfe3ff; }      /* light blue 2 */
-.eng { background-color: #fff3b0; }      /* light yellow */
-.math { background-color: #ffd2d2; }     /* light red/pink */
-.bio { background-color: #c8f7c5; }      /* light green */
-.work { background-color: #e0d4ff; }     /* light purple */
-.gym { background-color: #d6f5ff; }      /* light cyan */
-.commute { background-color: #eaeaea; }  /* light gray */
-.lunch { background-color: #ffe0b2; }    /* light orange */
-.family { background-color: #ffd9f0; }   /* light pink */
-.study { background-color: #d8ffd8; }    /* light mint */
+/* EXTRA ITEM (2pts): color code schedule blocks */
+.cs{ background: #d9f2ff; }       /* light blue */
+.cs2{ background: #e6ddff; }      /* light purple */
+.math{ background: #ffe0e0; }     /* light red */
+.spanish{ background: #fff5b5; }  /* light yellow */
+.web{ background: #dfffe0; }      /* light green */
+.work{ background: #d0d0d0; }     /* gray */
+.commute{ background: #f0e6d6; }  /* beige */
+.study{ background: #e8f0ff; }    /* soft blue */
+.family{ background: #d9ffe8; }   /* mint */
+.lunch{ background: #fff0d9; }    /* light orange */
